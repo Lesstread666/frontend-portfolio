@@ -1,0 +1,27 @@
+.intro-section {
+    background-color: #1a1a1a;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+.intro-image {
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid #555555; 
+}
+
+/* About section preview */
+.about-section {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    text-align: center;
+}
