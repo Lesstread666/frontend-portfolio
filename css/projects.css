@@ -4,6 +4,26 @@
     color: #f5f5f5;
 }
 
+.project-card.latest {
+    border: 2px solid #ff7f50;
+    background-color: #262626;
+    box-shadow: 0 0 20px rgba(255, 127, 80, 0.5);
+    position: relative;
+}
+
+.project-card.latest::before {
+    content: "Latest Project";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #ff7f50;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+}
+
 .project-card {
     background-color: #1a1a1a;
     padding: 2rem;
@@ -37,7 +57,7 @@
 }
 
 .project-card a:hover {
-    color: #88c0d0;           
+    color: #88c0d0;
     border-bottom: 2px solid #88c0d0;
 }
 
