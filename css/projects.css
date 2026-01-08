@@ -62,7 +62,7 @@
     display: inline-block;
     margin-right: 1.5rem;
     color: #dcdcdc;
-    border-bottom: 2px solid transparent;
+   border-bottom: 2px solid #555;
     transition: color 0.3s, border-bottom 0.3s;
 }
 
