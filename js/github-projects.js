@@ -28,8 +28,6 @@ const fetchLatestProject = async () => {
         const latestRepo = repos[0]
         //Name, description, demo, links
         latestProjectContainer.innerHTML = `
-             <h2>Latest Project</h2>
-
     <h3>${formatRepoName(latestRepo.name)}</h3>
     <p>${latestRepo.description || 'No description provided.'}</p>
 

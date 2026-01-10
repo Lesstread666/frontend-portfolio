@@ -1,31 +1,47 @@
 .page-container h1 {
     text-align: center;
     margin-bottom: 3rem;
-    color: #f5f5f5;
+    color: var(--color-text-primary);
+}
+
+.project-card {
+    background-color: var(--color-surface);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-default);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity var(--transition-smooth), transform var(--transition-smooth), box-shadow var(--transition-fast);
+}
+
+.project-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .project-card.latest {
-    border: 2px solid #ff7f50;
-    background-color: #262626;
-    box-shadow: 0 0 20px rgba(255, 127, 80, 0.5);
+    border: 2px solid var(--color-accent-project);
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-accent);
     position: relative;
 }
 
 .project-card.latest::before {
     content: "Latest Project";
     position: absolute;
-    top: -10px;
-    left: 10px;
-    background-color: #ff7f50;
-    color: #1a1a1a;
+    top: -14px;
+    left: 50px;
+    background-color: var(--color-accent-project);
+    color: var(--color-surface);
     font-weight: bold;
     padding: 0.2rem 0.6rem;
-    border-radius: 5px;
-    font-size: 0.85rem;
+    border-radius: var(--radius-small);
+    font-size: 1rem;
 }
 
 .loading {
-    color: #ccc;
+    color: var(--color-text-muted);
     font-style: italic;
     text-align: center;
 }
@@ -34,41 +50,31 @@
     display: none;
 }
 
-.project-card {
-    background-color: #1a1a1a;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    box-shadow: var(--shadow-hover);
 }
 
 .project-card h2 {
     margin-bottom: 0.5rem;
-    color: #88c0d0;
+    color: var(--color-link-hover-project);
 }
 
 .project-card p {
     margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: var(--line-height);
 }
 
 .project-card a {
     display: inline-block;
-    margin-right: 1.5rem;
-    color: #dcdcdc;
-   border-bottom: 2px solid #555;
-    transition: color 0.3s, border-bottom 0.3s;
+    color: var(--color-link);
+    border-bottom: 2px solid var(--color-border);
+    transition: color var(--transition-fast), border-bottom var(--transition-fast);
 }
 
 .project-card a:hover {
-    color: #88c0d0;
-    border-bottom: 2px solid #88c0d0;
+    color: var(--color-link-hover-project);
+    border-bottom: 2px solid var(--color-link-hover-project);
 }
 
 .demo-preview {
@@ -76,8 +82,8 @@
     max-width: 600px;
     height: 400px;
     overflow: hidden;
-    border: 1px solid #333;
-    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
     margin: 2rem auto;
     position: relative;
 }

@@ -6,13 +6,13 @@
 .about-intro h1 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #f5f5f5;
+    color: var(--color-text-primary);
 }
 
 .about-intro p {
     margin-bottom: 1.2rem;
-    line-height: 1.6;
-    color: #dcdcdc;
+    line-height: var(--line-height);
+    color: var(--color-text-muted);
 }
 
 .about-image {
@@ -21,8 +21,8 @@
     object-fit: cover;
     display: block;
     margin: 2rem auto;
-    border-radius: 8px;
-    border: 1px solid #333
+    border-radius: var(--radius-medium);
+    border: 1px solid var(--color-border);
 }
 
 .about-skills {
@@ -32,7 +32,7 @@
 
 .about-skills h2 {
     margin-bottom: 1rem;
-    color: #f5f5f5;
+    color: var(--color-text-primary);
 }
 
 .about-skills ul {
@@ -42,8 +42,8 @@
 
 .about-skills li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid #333;
-    color: #dcdcdc;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-muted);
 }
 
 .about-skills li:last-child {

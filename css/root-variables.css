@@ -1,0 +1,31 @@
+:root {
+    /* Colors */
+    --color-background: rgb(20, 20, 20);
+    --color-surface: rgb(25, 25, 25);
+    --color-accent-project: rgb(255, 127, 80);
+    --color-accent-default: rgb(120, 120, 120);
+    --color-text-primary: rgb(255, 255, 255);
+    --color-text-muted: rgb(200, 200, 200);
+    --color-link: rgb(220, 220, 220);
+    --color-link-hover-default: white;
+    --color-link-hover-project: rgb(136, 192, 208);
+    --color-border: rgb(50, 50, 50);
+
+    /* Borders & radius */
+    --radius-small: 5px;
+    --radius-medium: 8px;
+    --radius-large: 10px;
+
+    /* Shadows */
+    --shadow-default: 0 0 15px rgba(0, 0, 0, 0.6);
+    --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.8);
+    --shadow-accent: 0 0 20px rgba(255, 127, 80, 0.5);
+
+    /*  Typography */
+    --font-main: Arial, Helvetica, sans-serif;
+    --line-height: 1.6;
+
+    /* Transitions*/
+    --transition-fast: 0.3s ease;
+    --transition-smooth: 0.6s ease;
+}
