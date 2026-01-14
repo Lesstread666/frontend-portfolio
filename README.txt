@@ -72,6 +72,6 @@ Performance: 90+ Accessibility: 90+ Best Practices: 100 SEO: 80+
 
 Vladislav Maksimov - Frontend Developer
 
-GitHub: https://github.com/Lesstread666 LinkedIn:
-https://www.linkedin.com/in/vladislav-maksimov/
+GitHub: https://github.com/Lesstread666 
+LinkedIn: https://www.linkedin.com/in/vladislav-maksimov/
 
