@@ -37,7 +37,7 @@ a:hover {
 }
 
 .page-container a:not(.button) {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .site-header,
@@ -55,7 +55,7 @@ a:hover {
 }
 
 .main-navigation a.active {
-    color: var(--color-accent-project); 
+    color: var(--color-accent-project);
     border-bottom: 2px solid var(--color-accent-project);
 }
 
@@ -78,6 +78,11 @@ a:hover {
     color: var(--color-link);
     margin: 0 0.5rem;
 }
+
+.site-footer p a:not(:has(i)) {
+  text-decoration: underline;
+}
+
 .site-footer a:hover {
     color: var(--color-accent-project);
 }
@@ -85,7 +90,7 @@ a:hover {
 .site-footer a:hover i {
     transform: scale(1.3);
     color: var(--color-accent-project);
-    text-shadow: 0 0 8px var( --shadow-accent);
+    text-shadow: 0 0 8px var(--shadow-accent);
 }
 
 .main-navigation ul {
