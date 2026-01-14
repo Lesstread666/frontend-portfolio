@@ -14,7 +14,6 @@
     transform: translateY(20px);
     transition: opacity var(--transition-smooth), transform var(--transition-smooth), box-shadow var(--transition-fast);
     will-change: opacity, transform;
-    contain: content;
     transform: translateZ(0);
 }
 
