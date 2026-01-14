@@ -28,7 +28,7 @@ const fetchLatestProject = async () => {
         const latestRepo = repos[0]
         //Name, description, demo, links
         latestProjectContainer.innerHTML = `
-    <h3>${formatRepoName(latestRepo.name)}</h3>
+    <h3 class="latest-project-title">${formatRepoName(latestRepo.name)}</h3>
     <p>${latestRepo.description || 'No description provided.'}</p>
 
     ${latestRepo.homepage ? `
@@ -49,6 +49,8 @@ const fetchLatestProject = async () => {
         //Loading state 
     } finally {
         loadingState.classList.add('hidden')
+        //When all projects ready to present they will show 1 by 1 after some periosd of time in order 
+        document.dispatchEvent(new Event('latestProjectReady'))
     }
 }
 //Call and show the function (latest project)

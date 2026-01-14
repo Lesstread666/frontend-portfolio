@@ -1,12 +1,7 @@
-$(() => {
-
+$(document).on('latestProjectReady', () => {
     const projectCards = $('.project-card')
 
     projectCards.each((index, card) => {
-        $(card)
-            .delay(index * 150)
-            .fadeTo(0, 1)
-            .addClass('fade-in')
+        setTimeout(() => { $(card).addClass('fade-in') }, 1500 + index * 1500)
     })
-
 })

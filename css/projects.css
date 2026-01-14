@@ -27,6 +27,10 @@
     position: relative;
 }
 
+.latest-project-title {
+    color: var(--color-accent-project);
+}
+
 .project-card.latest::before {
     content: "Latest Project";
     position: absolute;
@@ -57,7 +61,7 @@
 
 .project-card h2 {
     margin-bottom: 0.5rem;
-    color: var(--color-link-hover-project);
+    color: var(--color-accent-project);
 }
 
 .project-card p {
