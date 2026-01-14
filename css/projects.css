@@ -13,6 +13,9 @@
     opacity: 0;
     transform: translateY(20px);
     transition: opacity var(--transition-smooth), transform var(--transition-smooth), box-shadow var(--transition-fast);
+    will-change: opacity, transform;
+    contain: content;
+    transform: translateZ(0);
 }
 
 .project-card.fade-in {
@@ -25,6 +28,8 @@
     background-color: var(--color-surface);
     box-shadow: var(--shadow-accent);
     position: relative;
+    opacity: 1;
+    transform: none;
 }
 
 .latest-project-title {

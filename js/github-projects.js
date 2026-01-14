@@ -28,18 +28,23 @@ const fetchLatestProject = async () => {
         const latestRepo = repos[0]
         //Name, description, demo, links
         latestProjectContainer.innerHTML = `
-    <h3 class="latest-project-title">${formatRepoName(latestRepo.name)}</h3>
-    <p>${latestRepo.description || 'No description provided.'}</p>
+  <h2 class="latest-project-title">${formatRepoName(latestRepo.name)}</h2>
+  <p>${latestRepo.description || 'No description provided.'}</p>
 
-    ${latestRepo.homepage ? `
-        <div class="demo-preview">
-            <iframe src="${latestRepo.homepage}"></iframe>
-        </div>
-    ` : `<p>No live demo available.</p>`}
+  ${latestRepo.homepage ? `
+    <div class="demo-preview">
+      <iframe
+        src="${latestRepo.homepage}"
+        title="Live demo preview of ${formatRepoName(latestRepo.name)}"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+      ></iframe>
+    </div>
+  ` : `<p>No live demo available.</p>`}
 
-    <a href="${latestRepo.html_url}" target="_blank">GitHub</a>
-    ${latestRepo.homepage ? ` | <a href="${latestRepo.homepage}" target="_blank">Live Demo</a>` : ''}
-        `
+  <a href="${latestRepo.html_url}" target="_blank" rel="noopener">GitHub</a>
+  ${latestRepo.homepage ? ` | <a href="${latestRepo.homepage}" target="_blank" rel="noopener">Live Demo</a>` : ''}
+`;
         //Replace them with some comment if not available
     } catch (error) {
         latestProjectContainer.innerHTML = `
